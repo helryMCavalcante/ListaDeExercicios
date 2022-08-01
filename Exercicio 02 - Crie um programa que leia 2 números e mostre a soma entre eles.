@@ -1,0 +1,22 @@
+//Exercicio 02 - Crie um programa que leia 2 números e mostre a soma entre eles.
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args){
+    Scanner input = new Scanner(System.in);
+    
+    System.out.println("Digite o primeiro numero: ");
+        Integer number1 = input.nextInt();
+    System.out.println("Digite o segundo numero: ");
+        Integer number2 = input.nextInt();
+
+    Integer soma = number1+number2;
+
+
+        System.out.println("A soma dos valores informados e "+ soma );
+ }
+}
