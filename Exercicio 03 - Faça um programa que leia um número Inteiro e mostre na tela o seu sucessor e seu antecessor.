@@ -1,0 +1,21 @@
+//Exercicio 03 - Faça um programa que leia um número Inteiro e mostre na tela o seu sucessor e seu antecessor.
+
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args){
+    Scanner input = new Scanner(System.in);
+
+        System.out.print("Digite um valor qualquer: ");
+        Integer number = input.nextInt();
+
+        Integer sucessor = number + 1;
+        Integer antecessor = number - 1;
+
+        System.out.println("O numero informado e "+number+". seu sucessor e "+sucessor+" e seu antecessaor e "+antecessor+".");
+        
+ }
+}
