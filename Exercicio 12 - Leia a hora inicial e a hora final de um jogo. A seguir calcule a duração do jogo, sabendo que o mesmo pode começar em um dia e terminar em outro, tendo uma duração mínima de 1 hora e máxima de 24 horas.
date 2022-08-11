@@ -1,0 +1,28 @@
+Exercicio 12 - Leia a hora inicial e a hora final de um jogo. A seguir calcule a duração do jogo, sabendo que o mesmo pode
+começar em um dia e terminar em outro, tendo uma duração mínima de 1 hora e máxima de 24 horas.
+--------------------------------------------------------------------------------------------------------------------------
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        Integer horaInicial,horaFinal,duracaoJogo;
+
+        System.out.println("Informe a hora de inicio do jogo: ");
+        horaInicial = input.nextInt();
+        System.out.println("Informe a hora do termino do jogo: ");
+        horaFinal = input.nextInt();
+
+
+        if(horaInicial < horaFinal){
+            duracaoJogo = horaInicial - horaFinal;
+        }else{
+            duracaoJogo = 24 - horaInicial + horaFinal;
+        }
+        System.out.println("O jogo teve a duracao de " + duracaoJogo + " hora(s)");
+    }
+}
