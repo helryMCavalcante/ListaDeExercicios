@@ -10,19 +10,15 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        Integer horaInicial,horaFinal,duracaoJogo;
+        Integer horaInicial,horaFinal;
 
         System.out.println("Informe a hora de inicio do jogo: ");
         horaInicial = input.nextInt();
         System.out.println("Informe a hora do termino do jogo: ");
         horaFinal = input.nextInt();
-
-
-        if(horaInicial < horaFinal){
-            duracaoJogo = horaInicial - horaFinal;
-        }else{
-            duracaoJogo = 24 - horaInicial + horaFinal;
-        }
+        
+        Integer duracaoJogo = (horaInicial < horaFinal) ? horaInicial - horaFinal : 24 - horaInicial + horaFinal;
+        
         System.out.println("O jogo teve a duracao de " + duracaoJogo + " hora(s)");
     }
 }
